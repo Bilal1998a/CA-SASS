@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#" data-abc="true">FAISBOK</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor02"
+        aria-controls="navbarColor02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html" data-abc="true">HOME </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./profile.html" data-abc="true"
+              >PROFILE</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./feed.html" data-abc="true">FEED</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>Create post</h1>
+
+          <form action="" method="POST">
+            <div class="form-group has-error">
+              <label for="slug"
+                >Slug <span class="require">*</span>
+                <small>(This field use in url path.)</small></label
+              >
+              <input type="text" class="form-control" name="slug" />
+              <span class="help-block">Field not entered!</span>
+            </div>
+
+            <div class="form-group">
+              <label for="title">Title <span class="require">*</span></label>
+              <input type="text" class="form-control" name="title" />
+            </div>
+
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea
+                rows="5"
+                class="form-control"
+                name="description"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <p><span class="require">*</span> - required fields</p>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Create</button>
+              <button class="btn btn-default">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="input-group p-5">
+      <div class="form-outline">
+        <input type="search" id="form1" class="form-control" />
+        <label class="form-label" for="form1">Search</label>
+      </div>
+      <div class="btn-feed">
+        <button type="button" class="btn btn-primary">Search</button>
+        <button type="button" class="btn btn-primary">Recent</button>
+        <button type="button" class="btn btn-primary">Popular</button>
+        <button type="button" class="btn btn-primary">Trending</button>
+      </div>
+    </div>
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"
+    />
+    <div class="container">
+      <div class="well">
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="http://placekitten.com/150/150" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Receta 1</h4>
+            <p class="text-right">By Francisco</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              pharetra varius quam sit amet vulputate. Quisque mauris augue,
+              molestie tincidunt condimentum vitae, gravida a libero. Aenean sit
+              amet felis dolor, in sagittis nisi. Sed ac orci quis tortor
+              imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in
+              felis sit amet augue.
+            </p>
+            <ul class="list-inline list-unstyled">
+              <li>
+                <span
+                  ><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours
+                </span>
+              </li>
+              <li>|</li>
+              <span
+                ><i class="glyphicon glyphicon-comment"></i> 2 comments</span
+              >
+              <li>|</li>
+              <li>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+              </li>
+              <li>|</li>
+              <li>
+                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                <span><i class="fa fa-facebook-square"></i></span>
+                <span><i class="fa fa-twitter-square"></i></span>
+                <span><i class="fa fa-google-plus-square"></i></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="well">
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="http://placekitten.com/150/150" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Receta 2</h4>
+            <p class="text-right">By Anailuj</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              pharetra varius quam sit amet vulputate. Quisque mauris augue,
+              molestie tincidunt condimentum vitae, gravida a libero. Aenean sit
+              amet felis dolor, in sagittis nisi. Sed ac orci quis tortor
+              imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in
+              felis sit amet augue.
+            </p>
+            <ul class="list-inline list-unstyled">
+              <li>
+                <span
+                  ><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours
+                </span>
+              </li>
+              <li>|</li>
+              <span
+                ><i class="glyphicon glyphicon-comment"></i> 2 comments</span
+              >
+              <li>|</li>
+              <li>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+              </li>
+              <li>|</li>
+              <li>
+                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                <span><i class="fa fa-facebook-square"></i></span>
+                <span><i class="fa fa-twitter-square"></i></span>
+                <span><i class="fa fa-google-plus-square"></i></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"
+    />
+    <div class="container">
+      <div class="well">
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="http://placekitten.com/150/150" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Receta 1</h4>
+            <p class="text-right">By Francisco</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              pharetra varius quam sit amet vulputate. Quisque mauris augue,
+              molestie tincidunt condimentum vitae, gravida a libero. Aenean sit
+              amet felis dolor, in sagittis nisi. Sed ac orci quis tortor
+              imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in
+              felis sit amet augue.
+            </p>
+            <ul class="list-inline list-unstyled">
+              <li>
+                <span
+                  ><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours
+                </span>
+              </li>
+              <li>|</li>
+              <span
+                ><i class="glyphicon glyphicon-comment"></i> 2 comments</span
+              >
+              <li>|</li>
+              <li>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+              </li>
+              <li>|</li>
+              <li>
+                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                <span><i class="fa fa-facebook-square"></i></span>
+                <span><i class="fa fa-twitter-square"></i></span>
+                <span><i class="fa fa-google-plus-square"></i></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="well">
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="http://placekitten.com/150/150" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Receta 2</h4>
+            <p class="text-right">By Anailuj</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              pharetra varius quam sit amet vulputate. Quisque mauris augue,
+              molestie tincidunt condimentum vitae, gravida a libero. Aenean sit
+              amet felis dolor, in sagittis nisi. Sed ac orci quis tortor
+              imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in
+              felis sit amet augue.
+            </p>
+            <ul class="list-inline list-unstyled">
+              <li>
+                <span
+                  ><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours
+                </span>
+              </li>
+              <li>|</li>
+              <span
+                ><i class="glyphicon glyphicon-comment"></i> 2 comments</span
+              >
+              <li>|</li>
+              <li>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+              </li>
+              <li>|</li>
+              <li>
+                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                <span><i class="fa fa-facebook-square"></i></span>
+                <span><i class="fa fa-twitter-square"></i></span>
+                <span><i class="fa fa-google-plus-square"></i></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"
+    />
+    <div class="container">
+      <div class="well">
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="http://placekitten.com/150/150" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Receta 1</h4>
+            <p class="text-right">By Francisco</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              pharetra varius quam sit amet vulputate. Quisque mauris augue,
+              molestie tincidunt condimentum vitae, gravida a libero. Aenean sit
+              amet felis dolor, in sagittis nisi. Sed ac orci quis tortor
+              imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in
+              felis sit amet augue.
+            </p>
+            <ul class="list-inline list-unstyled">
+              <li>
+                <span
+                  ><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours
+                </span>
+              </li>
+              <li>|</li>
+              <span
+                ><i class="glyphicon glyphicon-comment"></i> 2 comments</span
+              >
+              <li>|</li>
+              <li>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+              </li>
+              <li>|</li>
+              <li>
+                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                <span><i class="fa fa-facebook-square"></i></span>
+                <span><i class="fa fa-twitter-square"></i></span>
+                <span><i class="fa fa-google-plus-square"></i></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="well">
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="http://placekitten.com/150/150" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Receta 2</h4>
+            <p class="text-right">By Anailuj</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              pharetra varius quam sit amet vulputate. Quisque mauris augue,
+              molestie tincidunt condimentum vitae, gravida a libero. Aenean sit
+              amet felis dolor, in sagittis nisi. Sed ac orci quis tortor
+              imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in
+              felis sit amet augue.
+            </p>
+            <ul class="list-inline list-unstyled">
+              <li>
+                <span
+                  ><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours
+                </span>
+              </li>
+              <li>|</li>
+              <span
+                ><i class="glyphicon glyphicon-comment"></i> 2 comments</span
+              >
+              <li>|</li>
+              <li>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+              </li>
+              <li>|</li>
+              <li>
+                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                <span><i class="fa fa-facebook-square"></i></span>
+                <span><i class="fa fa-twitter-square"></i></span>
+                <span><i class="fa fa-google-plus-square"></i></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

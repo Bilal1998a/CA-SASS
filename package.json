@@ -1,0 +1,24 @@
+{
+  "name": "ca-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+
+    "build": "sass styles:dist/css",
+  
+    "dev": "sass --watch styles:dist/css",
+  
+    "test": "echo \"Error: no test specified\" && exit 1"
+  
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "sass": "^1.66.1"
+  }
+}
+
+
